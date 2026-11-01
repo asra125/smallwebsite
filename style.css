@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+    --rose: #bd687e;
+    --rose-dark: #91485e;
+    --pink: #f8e5e9;
+    --cream: #fffaf8;
+    --ink: #45333a;
+    --muted: #76656b;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.65;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 8%;
+    background: var(--white);
+}
+
+.logo {
+    color: var(--ink);
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--rose);
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--rose);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center;
+    gap: 35px;
+    padding: 65px 10%;
+    background: var(--pink);
+    min-height: 440px;
+}
+
+.hero-copy {
+    max-width: 570px;
+}
+
+.eyebrow {
+    color: var(--rose-dark);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2.7rem, 6vw, 4.6rem);
+    margin: 12px 0;
+}
+
+h1 span {
+    color: var(--rose);
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: var(--rose-dark);
+}
+
+.hero-copy>p:not(.eyebrow) {
+    max-width: 490px;
+    color: var(--muted);
+}
+
+.button {
+    display: inline-block;
+    border: 0;
+    border-radius: 30px;
+    padding: 12px 25px;
+    background: var(--rose-dark);
+    color: var(--white);
+    text-decoration: none;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #713448;
+}
+
+.hero-image {
+    min-height: 290px;
+    border-radius: 48% 48% 42% 42%;
+    background: #f3cbd4;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 35px #91485e20;
+}
+
+.makeup {
+    position: absolute;
+    font-size: 5rem;
+}
+
+.makeup-one {
+    left: 17%;
+    top: 0%;
+    transform: rotate(-15deg);
+}
+
+.makeup-two {
+    right: 17%;
+    top: 0%;
+    transform: rotate(12deg);
+
+}
+
+.makeup-three {
+    left: 17%;
+    top: 0%;
+    bottom: 16%;
+}
+
+.hero-note {
+    position: absolute;
+    right: -10px;
+    bottom: 25px;
+    padding: 12px 17px;
+    border-radius: 12px;
+    background: white;
+    color: var(--rose-dark);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section-intro {
+    color: var(--muted);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 28px;
+    text-align: left;
+}
+
+.card {
+    background: white;
+    border: 1px solid #f1e3e5;
+    border-radius: 16px;
+    padding: 26px;
+    box-shadow: 0 10px 28px #45333a0a;
+}
+
+.card h3 {
+    color: var(--rose-dark);
+    margin-bottom: 7px;
+}
+
+.card p {
+    color: var(--muted);
+    margin-bottom: 0;
+}
+
+.product-icon {
+    font-size: 3rem;
+}
+
+.callout {
+    padding: 45px 20px;
+    background: #f5dce2;
+    text-align: center;
+}
+
+.callout h2 {
+    margin-bottom: 8px;
+}
+
+.button-light {
+    background: white;
+    color: var(--rose-dark);
+    margin-top: 10px;
+}
+
+.page-heading {
+    text-align: center;
+    padding: 55px 8%;
+    background: var(--pink);
+}
+
+.page-heading h1 {
+    font-size: clamp(2.4rem, 5vw, 3.7rem);
+}
+
+.page-heading>p:last-child {
+    color: var(--muted);
+}
+
+.about-content {
+    max-width: 920px;
+    margin: 45px auto;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.about-art {
+    min-height: 250px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    border-radius: 48% 48% 18px 18px;
+    background: #f5dce2;
+    font-size: 5rem;
+}
+
+.about-content h2 {
+    font-size: 1.7rem;
+    margin: 0 0 8px;
+}
+
+.about-content p {
+    color: var(--muted);
+    margin: 0 0 25px;
+}
+
+.contact-section {
+    max-width: 1000px;
+    margin: 45px auto 60px;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: 45px;
+}
+
+.contact-details p {
+    color: var(--muted);
+}
+
+.small-note {
+    font-size: .85rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 26px;
+    background: white;
+    border: 1px solid #f1e3e5;
+    border-radius: 16px;
+    box-shadow: 0 10px 28px #45333a0a;
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e8d6db;
+    border-radius: 8px;
+    background: #fffdfd;
+    color: var(--ink);
+    font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    outline: 2px solid #e7a9b8;
+    border-color: transparent;
+}
+
+.contact-form .button {
+    margin-top: 10px;
+}
+
+.form-message {
+    min-height: 24px;
+    margin: 0;
+    color: #39764a;
+    font-weight: 600;
+}
+
+footer {
+    padding: 22px;
+    background: var(--rose-dark);
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 48px 7%;
+    }
+
+    .hero-copy {
+        margin: auto;
+    }
+
+    .hero-image {
+        min-height: 250px;
+        margin: 10px 15px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content,
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .about-art {
+        min-height: 170px;
+    }
+}

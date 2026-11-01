@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Glow | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="index.html">BEAUTY <span>GLOW</span></a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <p class="eyebrow">SAY HELLO</p>
+            <h1>We'd love to hear from you.</h1>
+            <p>Send us your questions, suggestions or beauty-related queries.</p>
+        </section>
+        <section class="contact-section">
+            <div class="contact-details">
+                <h2>Get in touch</h2>
+                <p>Complete the form and we'll be happy to hear from you.</p>
+                <p>✉️ Email: hello@beautyglow.example</p>
+                <p>📍 Location: Your City, Pakistan</p>
+                <p class="small-note">Sample contact details — replace these with your own.</p>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <label for="name">Full Name *</label>
+                <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address *</label>
+                <input id="email" name="email" type="email" placeholder="example@email.com" required>
+
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" type="tel" placeholder="03XX XXXXXXX">
+
+                <label for="topic">Your Topic</label>
+                <select id="topic" name="topic">
+                    <option value="">Select a topic</option>
+                    <option>Makeup products</option>
+                    <option>Beauty tips</option>
+                    <option>Feedback</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                    required></textarea>
+
+                <button class="button" type="submit">Submit Message</button>
+                <p id="formMessage" class="form-message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+    <footer>© <span class="year"></span> Beauty Glow. All rights reserved.</footer>
+</body>
+
+</html>
